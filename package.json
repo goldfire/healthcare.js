@@ -1,0 +1,38 @@
+{
+  "name": "judiciary",
+  "version": "0.0.1",
+  "description": "Distributed DigitalOcean droplet auto-healing built on top of democracy.js.",
+  "homepage": "https://github.com/goldfire/democracy.js",
+  "keywords": [
+    "democracy",
+    "digitalocean",
+    "droplet",
+    "auto heal",
+    "healing",
+    "discovery"
+  ],
+  "author": "James Simpson <james@goldfirestudios.com> (http://goldfirestudios.com)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/goldfire/judiciary.js.git"
+  },
+  "scripts": {
+    "release": "VERSION=`printf 'v' && node -e 'console.log(require(\"./package.json\").version)'` && git tag $VERSION && git push && git push origin $VERSION && npm publish"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "democracy": "2.0.1",
+    "do-wrapper": "3.11.1",
+    "shortid": "2.2.8",
+    "axios": "0.18.0"
+  },
+  "devDependencies": {
+    "eslint": ">4.19.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.10.0"
+  },
+  "engines": [
+    "node >= 6.4.0"
+  ]
+}
