@@ -1,6 +1,6 @@
 {
   "name": "judiciary",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Distributed DigitalOcean droplet auto-healing built on top of democracy.js.",
   "homepage": "https://github.com/goldfire/democracy.js",
   "keywords": [
@@ -22,7 +22,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "democracy": "2.0.1",
+    "democracy": "2.1.0",
     "do-wrapper": "3.11.1",
     "shortid": "2.2.8",
     "axios": "0.18.0"
