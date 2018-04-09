@@ -1,1 +1,1 @@
-module.exports = require('./lib/judiciary.js');
+module.exports = require('./lib/healthcare.js');
