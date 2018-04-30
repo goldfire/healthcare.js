@@ -57,8 +57,10 @@ new Healthcare({
 ### Methods
 #### init()
 Sets up the "healthcare system" by discovering all of the DigitalOcean servers with the matching tag. Everything else must happen inside of the returned promise.
-#### group({tags = [], size = 1, config = {}})
+#### group({tags = [], size = 1, floatingIp = '', config = {}})
 Initialize a new group of servers. Prvide a list of tags to identify the group with, a size for the number of servers and a config to build the new servers with.
+
+You can also optionally include a `floatingIp` for the group. If this is provided, this IP will always be assigned to the current master server (useful for a cluster of load balancers for example).
 
 Server config uses the following format:
 
