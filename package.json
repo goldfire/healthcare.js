@@ -1,6 +1,6 @@
 {
   "name": "healthcare",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Distributed DigitalOcean droplet auto-healing built on top of democracy.js.",
   "homepage": "https://github.com/goldfire/healthcare.js",
   "keywords": [
